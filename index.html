@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Punto de venta | TAPW</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/font.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<section class="info">
+		<div class="contenido"><p>Proyecto de regularización de Tópicos Avanzados de programación web</p></div>
+	</section>
+	<header>
+		<section class="contenido">
+			<div class="logo vat">
+				<figure>
+					<img src="img/logo.png" alt="Punto de venta de TAPW">
+					
+				</figure>
+			</div>
+			<nav class="vat">
+				<ul>
+					<li><a href=""><i class="fa fa-angellist"></i>Ventas</a></li>
+					<li><a href="">Clientes</a></li>
+					<li><a href="">Productos</a></li>
+					<li><a href="">Provedores</a></li>
+				</ul>
+			</nav>
+		</section>
+	</header>
+	<section class="vista">
+		<!--++++++++++++VISTA VENTAS+++++++++++++++++++-->
+		<div class="contenido">
+			<div class="titulos"><h2>Ventas.</h2></div>
+			<div class="agregar_producto cont">
+				<h2>Ingresar articulos a vender.</h2>
+				<form action="">
+					<label for="inpt1">Código del Producto</label>
+					<input id="inpt1" type="text" placeholder="Ingresar código.">
+					<input class="btn" type="submit" value="Agregar">
+				</form>
+			</div>
+			<div class="lista_art vat">
+				<div class="titulos"><h2>Articulos agregados.</h2></div>
+				<table boder="1">
+					<tr class="parametros">
+						<td width="100px">Código</td>
+						<td width="200px">Nombre de articulo</td>
+						<td width="100px">Precio</td>
+						<td width="100px">Cantidad</td>
+						<td>Eliminar</td>
+					</tr>
+					<tr class="regreso">
+						<td>#A1C2</td>
+						<td>Laptop dell</td>
+						<td>$5500.00</td>
+						<td>
+							<form action="">
+								<input style="width:50px;" type="number">
+							</form>
+						</td>
+						<td><a class="eliminar" href="#borrar">X</a></td>
+					</tr>
+				</table>
+				
+			</div>
+			<div class="venta vat">
+			<div class="titulos titulo_venta"><h2>Venta.</h2></div>
+				<table class="totales">
+					<tr>
+						<td width="100px">Subtotal</td>
+						<td class="resultados">$400.00</td>
+					</tr>
+					<tr>
+						<td>IVA</td>
+						<td class="resultados">16%</td>
+					</tr>
+					<tr>
+						<td class="total">Total</td>
+						<td class="total">$500.00</td>
+					</tr>
+					<tr>
+						<td>Cambio</td>
+						<td class="resultados">0.00</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td>
+							<a class="btn titulo_venta" href="#pagar">Pagar</a>
+						</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--++++++++++++VISTA CLIENTES+++++++++++++++++++-->
+		<div class="contenido">
+			<div class="agregar_cliente">
+				<div class="titulos"><h2>Clientes.</h2></div>
+				<div class=" cont">
+					<h2>Agregar un cliente nuevo.</h2>
+					<form action="">
+						<input class="form_input" type="text" placeholder="Nombre(s)">
+						<input class="form_input" type="text" placeholder="Apellidos(s)">
+						<input class="form_input" type="text" placeholder="Dirección">
+						<input class="form_input" type="text" placeholder="RFC">
+						<input class="form_input" type="text" placeholder="Apellidos(s)">
+						<input class="form_input" type="text" placeholder="Telefono">
+						<input class="form_input" type="text" placeholder="Email">
+						<input class="btn input_size" type="submit" value="Agregar">
+					</form>
+				</div>
+			</div>
+			<div class="clientes_disponibles">
+				<div class="titulos  titulo_venta"><h2>Clientes agregados.</h2></div>
+				<table boder="1">
+					<tr class="parametros">
+						<td width="150px">RFC</td>
+						<td width="250px">Nombre del cliente</td>
+						<td width="180px">Telefono</td>
+						<td width="180px">email</td>
+						<td>Eliminar</td>
+					</tr>
+					<tr class="regreso">
+						<td>TAGF930818</td>
+						<td>Tapia Gonazalez Fernando Alonso</td>
+						<td>(618)1234567</td>
+						<td>
+							tapix@gmail.com
+						</td>
+						<td><a class="eliminar" href="#borrar">X</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<!--++++++++++++VISTA PRODUCTOS+++++++++++++++++++-->
+		<div class="contenido">
+			<div class="agregar_productos">
+				<div class="titulos"><h2>Productos.</h2></div>
+				<div class=" cont">
+					<h2>Agregar un producto nuevo.</h2>
+					<form action="">
+						<input class="form_input" type="text" placeholder="Nombre">
+						<input class="form_input" type="text" placeholder="Categoría">
+						<input class="form_input" type="text" placeholder="Precio">
+						<input class="form_input" type="text" placeholder="Códio del articulo">
+						<input class="btn input_size" type="submit" value="Agregar">
+					</form>
+				</div>
+			</div>
+			<div class="clientes_disponibles">
+				<div class="titulos  titulo_venta"><h2>Productos agregados.</h2></div>
+				<table boder="1">
+					<tr class="parametros">
+						<td width="100px">Código</td>
+						<td width="200px">Nombre de articulo</td>
+						<td width="100px">Precio</td>
+						
+						<td>Eliminar</td>
+					</tr>
+					<tr class="regreso">
+						<td>#A1C2</td>
+						<td>Laptop dell</td>
+						<td>$5500.00</td>
+						
+						<td><a class="eliminar" href="#borrar">X</a></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</section>
+	
+		</section>	
+</body>
+</html>
