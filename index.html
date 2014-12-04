@@ -5,6 +5,7 @@
 	<title>Punto de venta | TAPW</title>
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/font.css">
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" />
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -21,10 +22,14 @@
 			</div>
 			<nav class="vat">
 				<ul>
-					<li><a href=""><i class="fa fa-angellist"></i>Ventas</a></li>
-					<li><a href="">Clientes</a></li>
-					<li><a href="">Productos</a></li>
-					<li><a href="">Provedores</a></li>
+					<li><a href="">
+						<i class="fa fa-credit-card "></i>
+						Ventas
+						</a>
+					</li>
+					<li><a href=""><i class="fa fa-user "></i>Clientes</a></li>
+					<li><a href=""><i class="fa fa-shopping-cart "></i>Productos</a></li>
+					<li><a href=""><i class="fa fa-plane"></i>Provedores</a></li>
 				</ul>
 			</nav>
 		</section>
@@ -32,7 +37,7 @@
 	<section class="vista">
 		<!--++++++++++++VISTA VENTAS+++++++++++++++++++-->
 		<div class="contenido">
-			<div class="titulos"><h2>Ventas.</h2></div>
+			<div class="titulos"><h2><i class="fa fa-credit-card "></i>Ventas.</h2></div>
 			<div class="agregar_producto cont">
 				<h2>Ingresar articulos a vender.</h2>
 				<form action="">
@@ -42,7 +47,7 @@
 				</form>
 			</div>
 			<div class="lista_art vat">
-				<div class="titulos"><h2>Articulos agregados.</h2></div>
+				<div class="titulos"><h2><i class="fa fa-save "></i>Articulos agregados.</h2></div>
 				<table boder="1">
 					<tr class="parametros">
 						<td width="100px">Código</td>
@@ -57,7 +62,7 @@
 						<td>$5500.00</td>
 						<td>
 							<form action="">
-								<input style="width:50px;" type="number">
+								<input style="width:50px;" type="number" min="1">
 							</form>
 						</td>
 						<td><a class="eliminar" href="#borrar">X</a></td>
@@ -66,7 +71,7 @@
 				
 			</div>
 			<div class="venta vat">
-			<div class="titulos titulo_venta"><h2>Venta.</h2></div>
+			<div class="titulos titulo_venta"><h2><i class="fa fa-credit-card "></i>Venta.</h2></div>
 				<table class="totales">
 					<tr>
 						<td width="100px">Subtotal</td>
@@ -112,7 +117,7 @@
 				</div>
 			</div>
 			<div class="clientes_disponibles">
-				<div class="titulos  titulo_venta"><h2>Clientes agregados.</h2></div>
+				<div class="titulos  titulo_venta"><h2><i class="fa fa-save "></i>Clientes agregados.</h2></div>
 				<table boder="1">
 					<tr class="parametros">
 						<td width="150px">RFC</td>
@@ -149,7 +154,7 @@
 				</div>
 			</div>
 			<div class="clientes_disponibles">
-				<div class="titulos  titulo_venta"><h2>Productos agregados.</h2></div>
+				<div class="titulos  titulo_venta"><h2><i class="fa fa-save "></i>Productos agregados.</h2></div>
 				<table boder="1">
 					<tr class="parametros">
 						<td width="100px">Código</td>
